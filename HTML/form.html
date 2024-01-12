@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Form di registrazione</h2>
+    <p>I campi contrassegnati con * sono obbligatori</p>
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Anagrafica</legend>
+       <fieldset>
+        <legend>Nome e Cognome</legend>
+        <label for="firstname">Inserisci Nome</label>
+        <input type="firstname" name="firstname" id="firstname" required maxlength="10" autofocus><br>
+        <label for="lastname">Inserisci Cognome</label>
+        <input type="lastname" name="lastname" id="lastname" readonly value="ghirardi"><br>
+       </fieldset>
+            
+        <label for="age">Inserisci la tua età</label>
+        <input type="number" name="" id="" disabled value="25"><br>
+    </fieldset>
+        <label for="level">Livello di conoscenza Java</label>
+        <input type="range" name="level" id="level" min="1" max="10" value="1">
+<label for="url">Sito Web</label>
+
+    </form>
+<h2>Form di ricerca</h2>
+    <form action="">
+        <label for="">Inserisci il termine da cercare</label><br>
+        <input type="search"><br>
+        <button type="submit">Cerca</button>
+    </form>
+    <form action="">
+        <label for="">Ora</label><br>
+        <input type="time" name="ora" id="ora"><br>
+        
+        <label for="">Città</label><br>
+        <select name="city" id="" required>city
+        <option value="">Scegli Città</option>
+        <optgroup label="città del nord">
+            <option value="Torino">Torino</option>    
+        <option value="Milano">Milano</option>
+        </optgroup>
+                <optgroup label="città del centro">
+<option value="Roma">Roma</option>
+<option value="Firenze">Firenze</option>
+                </optgroup>
+            <optgroup label="città del sud">
+<option value="Napoli">Napoli</option>    
+        <option value="Palermo">Palermo</option>
+            </optgroup>
+            </select><br>
+
+            <label for="veicoli">Veicoli</label><br>
+            <select name="veicoli" id="veicoli" multiple size="12">
+                <option value="">Scegli Veicoli</option>
+                <optgroup label="Tedesche">
+                    <option value="BMW">BMW</option>
+</optgroup>
+<optgroup label="Italiane">
+    <option value="Fiat">Fiat</option>
+</optgroup>
+            </select><br>
+
+            <label for="message">Lascia un messaggio</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+
+            <label for="cv">Cv in formato pdf</label><br>
+            <input type="file" name="cv" accept="image/jpeg, image/png"><br>
+    </form>
+    
+
+
+
+    
+</body>
+</html>

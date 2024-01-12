@@ -1,0 +1,156 @@
+/*selettore di elementi, essendo un ordine a cascata, l'ultima 
+caratteristica indicata sarà quella seguita dall'html, cascade style sheet
+CSS*/
+h1{
+    color: gold;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+#my_paragraph{
+    color: green;
+    width: 300px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    /*potrei anche scrivere padding: 8px*/
+    border-top: 1PX;
+    border-top-style: 1px;
+    border-right: 1px;
+    border-right-style: 1px;
+    border-bottom-style: 1px;
+    border-bottom: 1px;
+    border-left-style: 1px;
+    border-left: 1px;
+    /*potrei anche scrivere border: 1px solid red*/
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    /*potrei anche scrivere margin: 8px*/
+}
+p {
+    color: blueviolet;
+}
+h2{
+    color: rgb(4, 128, 121);
+}
+h3{
+    color: rgb(238, 10, 151);
+}
+
+
+
+.text{
+    color: rgb(0, 160, 107);
+}
+a[target]{
+    color: orangered;
+}
+a[href = "https://riot.com"]{
+    color: darkslategrey;
+}
+
+/*a[href^ = "http"]{
+    color = 'numerocolore'
+}
+questa dicitura cambia il colore di tutti link che iniziano con http
+*/
+
+
+
+
+a:link{
+    color: darkgreen;
+}
+a:hover{
+color: rgb(255, 51, 0);
+}
+a:visited{
+color: cyan;
+}
+a:active{
+color:rgb(10, 238, 21);
+}
+
+/*formattazione liste*/
+li:first-child{
+    color: crimson;
+}
+li:last-child{
+    color: darkturquoise;
+}
+
+li:nth-child(even){
+    color: chartreuse;
+}
+
+/*formattazione tabelle*/
+
+tbody tr:nth-child(2n+1){
+    background-color: aquamarine;
+}
+/*attraverso la dicitura 2n+1 sto indicando i numeri dispari, in questo
+modo le righe dispari della tabella si coloreranno di aquamarine*/
+
+/*formattazione form*/
+input:focus{
+    background-color: blueviolet;
+}
+/*la casella nella quale inserire del testo sarà colorata di blueviolet*/
+
+/*selettori di pseudo-elementi*/
+/*p::first-letter{
+    font-size: 32px;
+    color: black;
+}
+*/
+input::placeholder{
+    color: rgb(233, 150, 26);
+}
+
+/*combinatori di selettori*/
+/* combinatore + 
+h2 + p{
+font-size: 24px;
+}
+
+h3 + p{
+    font-size: 32px;
+}
+*/
+
+/*combinatore ~*/
+h3 ~ p{
+    font-size: 34px;
+}
+
+/*combinatore >*/
+p.example > span{
+    font-size: 32px;
+}
+
+/*selettore universale '  *  ', utilizzando l'asterisco sto comunicando
+all'intero HTML di avere questa caratteristica  */
+/* 
+*{
+    color: red;
+}
+*/
+
+/* indipendentemente dalla specificità attraverso la dicitura
+!important do la priorità ad un selettore piuttosto che ad un altra*/
+
+/*ereditarietà*/
+
+body{
+    color: red;
+    margin-left: 150px;
+    
+}
+
+
+
